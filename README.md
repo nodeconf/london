@@ -1,5 +1,11 @@
 # Speak at ONE-SHOT London!
 
+July 19th 2014
+Shoreditch Village Hall
+
+ONE-SHOT is a one day single track speaker series presented by NodeConf.
+
+
 ## Talk Acceptance
 
 All talks are still being considered. Talks will be accepted one at a time over about a month. Because the events are structured in a narrative acceptance happens in the order we fill the narrative.
