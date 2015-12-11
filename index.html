@@ -36,7 +36,6 @@
       footer {
         padding: 1em;
         font-size: .8em;
-        text-align: left;
       }
       h1 {
         line-height: 1em;
@@ -67,9 +66,18 @@
         }
       }
 
-      @media (min-width: 450px) {
+      @media (min-width: 850px) {
         html {
           font-size: 18px;
+        }
+        section {
+          display: inline-block;
+          vertical-align: top;
+          width: 31%;
+          margin-right: 3.5%;
+        }
+        section:last-child {
+          margin-right: 0;
         }
       }
 
@@ -92,12 +100,10 @@
       <section class="interest">
         <h2>Attending</h2>
         <p>If your interested in attending, please <a href="http://goo.gl/forms/bKcXW2231i">let us know</a>.</p>
-      </section>
-      <section class="speakers">
+      </section><section class="speakers">
         <h2>Speakers</h2>
         <p>If your interested in speaking, please <a href="http://goo.gl/forms/HVnzGku7aZ">let us know</a>.</p>
-      </section>
-      <section class="sponsors">
+      </section><section class="sponsors">
         <h2>Sponsors</h2>
         <p>If your interested in sponsoring, please <a href="http://goo.gl/forms/bKcXW2231i">get in touch</a>.</p>
       </section>
