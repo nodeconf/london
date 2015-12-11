@@ -8,24 +8,28 @@
     <link rel="image_src" href="logo.png" / >
     <meta name="description" content="Nodeconf London 2016" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
     <style>
       html, body {
         margin: 0;
         color: #fff;
         font-family: 'Montserrat', sans-serif;
         text-align: center;
-        background-color: #6b188d;
+        background-color: #0d3176;
       }
       header {
         padding: 1em;
         background-color: #0a1c3e;
       }
+      h1 {
+        color: #0d3176;
+        line-height: 1em;
+      }
+      header p {
+        color: #5deb25;
+      }
       .logo {
         width: 100%;
-        max-width: 450px;
-        transform: translateY(24%);
-
+        max-width: 250px;
         animation: logoIn .6s ease;
         -webkit-animation: logoIn .6s ease;
       }
@@ -33,25 +37,81 @@
         min-height: 200px;
         padding: 15% 1em 1em;
       }
+      .container a,
+      .container a:active {
+        color: #5deb25;
+        text-decoration: none;
+      }
+      .container a:hover {
+        color: #5deb25;
+        text-decoration: underline;
+      }
+
       footer {
         padding: 1em;
         font-size: .8em;
       }
-      h1 {
-        line-height: 1em;
+      footer a,
+      footer a:active {
+        color: #0a1c3e;
+        text-decoration: none;
       }
-      a, a:active, a:hover {
-        color: inherit;
+      footer a:hover {
+        color: #0a1c3e;
+        text-decoration: underline;
+      }
+
+      p {
+        color: #0a1c3e;
       }
 
       @keyframes logoIn
       {
         0% {
           opacity: 0;
+          transform: translateY(0%);
+        }
+        10% {
+          opacity: 0.1;
+          transform: translateY(10%);
+        }
+        20% {
+          opacity: 0.2;
+          transform: translateY(20%);
+        }
+        30% {
+          opacity: 0.3;
           transform: translateY(30%);
         }
+        40% {
+          opacity: 0.4;
+          transform: translateY(40%);
+        }
+        50% {
+          opacity: 0.5;
+          transform: translateY(50%);
+        }
+        60% {
+          opacity: 0.6;
+          transform: translateY(60%);
+        }
+        70% {
+          opacity: 0.7;
+          transform: translateY(70%);
+        }
+        80% {
+          opacity: 0.8;
+          transform: translateY(80%);
+        }
+        90% {
+          opacity: 0.9;
+          transform: translateY(90%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(100%);
+        }
       }
-
       @-webkit-keyframes logoIn
       {
         0% {
@@ -62,10 +122,9 @@
 
       @media (min-width: 450px) {
         .container {
-          padding-top: 70px;
+          padding-top: 25px;
         }
       }
-
       @media (min-width: 850px) {
         html {
           font-size: 18px;
@@ -81,35 +140,38 @@
         }
       }
 
-      @-moz-document url-prefix() { 
+      @-moz-document url-prefix() {
         html, body {
           background-color: #780092;
         }
       }
-
-
     </style>
 
   </head>
   <body>
-    <header><img class="logo" src="logo.png"/></header>
-    <div class="container">
-      <h1>NODECONF LONDON</h1>
+    <header>
+      <img class="logo" src="logo.png"/>
+      <h1>NODECONF LONDON 2016</h1>
       <p>Nodeconf London is a one day single track speaker series</p>
+    </header>
+    <div class="container">
 
       <section class="interest">
         <h2>Attending</h2>
-        <p>If your interested in attending, please <a href="http://goo.gl/forms/bKcXW2231i">let us know</a>.</p>
+        <p>If your interested in attending</p>
+        <p><a href="http://goo.gl/forms/bKcXW2231i">let us know</a></p>
       </section><section class="speakers">
         <h2>Speakers</h2>
-        <p>If your interested in speaking, please <a href="http://goo.gl/forms/HVnzGku7aZ">let us know</a>.</p>
+        <p>If your interested in speaking</p>
+        <p><a href="http://goo.gl/forms/HVnzGku7aZ">let us know</a></p>
       </section><section class="sponsors">
         <h2>Sponsors</h2>
-        <p>If your interested in sponsoring, please <a href="http://goo.gl/forms/bKcXW2231i">get in touch</a>.</p>
+        <p>If your interested in sponsoring<p>
+        <p><a href="http://goo.gl/forms/bKcXW2231i">get in touch</a></p>
       </section>
     </div>
     <footer>
-      <p>For more info contact <a href="mailto:icrowther@inviqa.com">Ian Crowther</a></p>
+      <p>Want more info? <a href="mailto:icrowther@inviqa.com">Contact Us</a></p>
     </footer>
   </body>
 </html>
