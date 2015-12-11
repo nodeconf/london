@@ -7,38 +7,88 @@
     <meta name="author" content="Ian Crowther">
     <link rel="image_src" href="logo.png" / >
     <meta name="description" content="Nodeconf London 2016" />
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
     <style>
-      body {
-        background-color: #0a1c3e;
+      html, body {
+        margin: 0;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        background-color: #6b188d;
       }
       header {
-        text-align: center;
+        padding: 1em;
+        background-color: #0a1c3e;
       }
       .logo {
+        width: 100%;
+        max-width: 450px;
+        transform: translateY(24%);
+
+        animation: logoIn .6s ease;
+        -webkit-animation: logoIn .6s ease;
+      }
+      .container {
+        min-height: 200px;
+        padding: 15% 1em 1em;
+      }
+      footer {
         padding: 1em;
-        width: 15em;
+        font-size: .8em;
+        text-align: left;
       }
-      h2 {
-        background-color: #0d3176;
-        color: # 5deb25;
+      h1 {
+        line-height: 1em;
       }
-      section {
-        background-color: #6b188d;
-        color: #fff;
+      a, a:active, a:hover {
+        color: inherit;
       }
+
+      @keyframes logoIn
+      {
+        0% {
+          opacity: 0;
+          transform: translateY(30%);
+        }
+      }
+
+      @-webkit-keyframes logoIn
+      {
+        0% {
+          opacity: 0;
+          transform: translateY(30%);
+        }
+      }
+
+      @media (min-width: 450px) {
+        .container {
+          padding-top: 70px;
+        }
+      }
+
+      @media (min-width: 450px) {
+        html {
+          font-size: 18px;
+        }
+      }
+
+      @-moz-document url-prefix() { 
+        html, body {
+          background-color: #780092;
+        }
+      }
+
+
     </style>
 
   </head>
   <body>
-    <header>
-      <img class="logo" src="logo.png"></img>
-    </header>
-    <section class="main">
-      <section class="hero">
-        <p>Nodeconf London is a one day single track speaker series</p>
-      </section>
+    <header><img class="logo" src="logo.png"/></header>
+    <div class="container">
+      <h1>NODECONF LONDON</h1>
+      <p>Nodeconf London is a one day single track speaker series</p>
+
       <section class="interest">
         <h2>Attending</h2>
         <p>If your interested in attending, please <a href="http://goo.gl/forms/bKcXW2231i">let us know</a>.</p>
@@ -51,7 +101,7 @@
         <h2>Sponsors</h2>
         <p>If your interested in sponsoring, please <a href="http://goo.gl/forms/bKcXW2231i">get in touch</a>.</p>
       </section>
-    </section>
+    </div>
     <footer>
       <p>For more info contact <a href="mailto:icrowther@inviqa.com">Ian Crowther</a></p>
     </footer>
