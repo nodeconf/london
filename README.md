@@ -1,5 +1,5 @@
 # Nodeconf London 2016
-<img src="https://raw.githubusercontent.com/iancrowther/london/master/logo.png" alt="Nodeconf London 2016 Logo" width="200px" height="200px">
+<img src="http://london.nodeconf.com/assets/logo/nodeconf-london.svg" alt="Nodeconf London 2016 Logo" width="200px" height="200px">
 
 Nodeconf London is a one day single track speaker series.
 
