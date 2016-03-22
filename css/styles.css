@@ -867,7 +867,7 @@ footer ul li a.contact-github:hover {
   box-sizing: border-box;
   min-height: 1px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .row {
     margin: 0;
   }
@@ -886,6 +886,20 @@ footer ul li a.contact-github:hover {
     width: auto;
     display: block;
     margin-bottom: 20px;
+  }
+  .row .col-1,
+  .row .col-2,
+  .row .col-3,
+  .row .col-4,
+  .row .col-5,
+  .row .col-6,
+  .row .col-7,
+  .row .col-8,
+  .row .col-9,
+  .row .col-10,
+  .row .col-11,
+  .row .off-11 {
+    margin-left: 0;
   }
 }
 .col-1.left,
@@ -1586,10 +1600,6 @@ body.night #hero .cloud:after {
   }
 }
 @media (max-width: 600px) {
-  #venue .off-2 {
-    margin-left: 0;
-    padding: 0;
-  }
   #venue ul.photos li {
     padding: 0;
   }
