@@ -308,13 +308,13 @@ body.fix-header header {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 999;
 }
 header {
   zoom: 1;
   background: #242333;
   padding: 17px 0;
   font-size: 15px;
+  z-index: 999;
 }
 header:before,
 header:after {
