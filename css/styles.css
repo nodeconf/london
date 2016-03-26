@@ -92,7 +92,7 @@ a img {
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  z-index: 9;
+  z-index: 8;
   top: 0;
   bottom: auto;
   font-size: 13px;
@@ -510,7 +510,7 @@ header ul a {
     -o-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    z-index: 9;
+    z-index: 8;
     bottom: 0;
     top: auto;
     font-size: 12px;
