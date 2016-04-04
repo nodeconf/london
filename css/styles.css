@@ -294,6 +294,38 @@ section .page-size {
     text-align: center;
   }
 }
+section.warning {
+  -webkit-box-shadow: rgba(0,0,0,0.1) 0 3px 0 0;
+  box-shadow: rgba(0,0,0,0.1) 0 3px 0 0;
+  background-color: #f1c309;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+section.warning:before {
+  background-image: url("/assets/illustrations/warning.svg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  display: inline-block;
+  content: '';
+  width: 25px;
+  height: 25px;
+  margin: -5px 5px -5px 0;
+}
+section.warning h1,
+section.warning h2,
+section.warning h3,
+section.warning h4,
+section.warning h5,
+section.warning h6 {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  display: inline-block;
+  text-shadow: rgba(0,0,0,0.1) 0 1px 0;
+}
 .page-size {
   max-width: 1000px;
   margin: auto;
