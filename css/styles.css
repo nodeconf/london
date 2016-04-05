@@ -1698,6 +1698,10 @@ body.night #hero .cloud:after {
   padding: 0;
   list-style: none;
 }
+#speakers ul.speakers-list .col-3 {
+  float: none;
+  display: inline-block;
+}
 #speakers ul.speakers-list .row {
   margin: 50px 0;
 }
@@ -1710,6 +1714,10 @@ body.night #hero .cloud:after {
   height: 150px;
   background: rgba(0,0,0,0.2);
   margin-bottom: 20px;
+  mix-blend-mode: luminosity;
+}
+#speakers ul.speakers-list .avatar:hover {
+  mix-blend-mode: normal;
 }
 #speakers ul.speakers-list h4 {
   margin-bottom: 5px;
