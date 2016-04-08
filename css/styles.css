@@ -1555,6 +1555,11 @@ input[type='reset'].disabled {
 #hero .cloud.cloud-03:after {
   background-image: url("/assets/hero/cloud-01-night.svg");
 }
+@media (max-width: 600px) {
+  #hero {
+    padding: 20px 0 40px;
+  }
+}
 body.night #hero {
   background: #17171f;
 }
@@ -1615,7 +1620,26 @@ body.night #hero .cloud:after {
 }
 #event {
   position: relative;
+}
+#event:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
   overflow: hidden;
+  background-image: url("/assets/logo/nodeconf-outline.svg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 25% auto;
+  -moz-background-size: 25% auto;
+  background-size: 25% auto;
+  background-attachment: fixed;
+  background-position: left 70% center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
 }
 #event .copy {
   position: relative;
@@ -1644,6 +1668,9 @@ body.night #hero .cloud:after {
   right: 0;
   top: 50%;
   margin-top: -280px;
+  opacity: 0.1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+  filter: alpha(opacity=10);
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 1.5) {
   #event .illustration {
@@ -1664,11 +1691,38 @@ body.night #hero .cloud:after {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
     filter: alpha(opacity=20);
   }
+  #event:after {
+    display: block;
+    background-attachment: scroll;
+    width: 80%;
+    max-width: 300px;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    padding-bottom: 80%;
+    position: static;
+    background-position: center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+  }
+  #event .copy a {
+    margin-top: 10px;
+    display: block;
+  }
+  #event .copy a .logo {
+    margin-left: -20px;
+  }
 }
 #cause {
   background: #2a544a;
 }
 #cause .illustration {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   width: 60%;
   margin-top: 70px;
   -webkit-animation: float 1s infinite alternate ease-in-out;
@@ -1687,6 +1741,25 @@ body.night #hero .cloud:after {
 #cause .cause-list {
   margin-top: 40px;
   text-align: center;
+}
+@media (max-width: 600px) {
+  #cause .row {
+    text-align: center;
+  }
+  #cause .col-4 {
+    width: 31.333333333333332%;
+    margin: 0 1%;
+    display: inline-block;
+    min-width: 100px;
+  }
+  #cause .logo {
+    margin: 0;
+  }
+  #cause .illustration {
+    max-width: 200px;
+    margin-top: 10px;
+    margin-bottom: -30px;
+  }
 }
 #speakers {
   background: #263e44;
