@@ -570,8 +570,8 @@ function toggle() {
     var e = arguments.length <= 0 || arguments[0] === undefined ? null : arguments[0];
 
     if (e) {
-        event.stopPropagation();
-        event.preventDefault();
+        e.stopPropagation();
+        e.preventDefault();
     }
 
     night = !night;
