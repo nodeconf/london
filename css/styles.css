@@ -150,6 +150,14 @@ h1,
 h2,
 .h2,
 h3,
+.h3 {
+  text-shadow: rgba(0,0,0,0.2) 0 2px 0;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
 .h3,
 h4,
 .h4,
@@ -1390,6 +1398,7 @@ input[type='reset'].disabled {
   -o-transition: color 1s;
   -ms-transition: color 1s;
   transition: color 1s;
+  text-shadow: none;
 }
 #hero h2 {
   margin-bottom: 30px;
@@ -1767,6 +1776,55 @@ body.night #hero .cloud:after {
     margin-bottom: -30px;
   }
 }
+section#categories {
+  background: #1a3836;
+}
+section#categories .illustration {
+  max-width: 100px;
+  margin: auto;
+  display: block;
+}
+section#categories ul.categories-list {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 50px;
+}
+section#categories ul.categories-list h3 {
+  text-align: center;
+  margin-top: 30px;
+}
+section#categories ul.categories-list p {
+  text-align: left;
+}
+section#categories ul.categories-list li.category-start-it h3 {
+  color: #f07b48;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+section#categories ul.categories-list li.category-build-it h3 {
+  color: #5ed7b3;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+section#categories ul.categories-list li.category-ship-it h3 {
+  color: #f49e8a;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+section#categories ul.categories-list li.category-use-it h3 {
+  color: #f3b82a;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+section#categories h2 {
+  text-align: center;
+}
 #speakers {
   background: #263e44;
   text-align: center;
@@ -2119,12 +2177,22 @@ section#sponsors {
   background: #131e36;
   text-align: center;
 }
+section#sponsors .sponsors-row h4 {
+  display: inline-block;
+  position: relative;
+  top: -20px;
+  margin-right: 20px;
+}
+section#sponsors .sponsors-row ul {
+  border-radius: 3px;
+  vertical-align: middle;
+}
 section#sponsors ul.sponsors-list {
   margin-left: 0;
   margin-right: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   display: inline-block;
 }
 section#sponsors ul.sponsors-list li {
@@ -2148,11 +2216,25 @@ section#sponsors ul.sponsors-list.community li {
   width: 140px;
 }
 @media (max-width: 600px) {
+  section#sponsors h2 {
+    margin-bottom: 40px;
+  }
+  section#sponsors .sponsors-row h4 {
+    position: static;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  section#sponsors .sponsors-row ul {
+    vertical-align: baseline;
+  }
   section#sponsors ul.sponsors-list li {
-    width: 50%;
+    width: 140px;
+    padding: 10px;
   }
   section#sponsors ul.sponsors-list.community li {
-    width: 33.333333333333336%;
+    width: 100px;
+    padding: 10px;
   }
 }
 #schedule {
@@ -2175,6 +2257,7 @@ section#sponsors ul.sponsors-list.community li {
   border-collapse: collapse;
   border-spacing: 0;
   overflow: hidden;
+  font-size: 13px;
 }
 #schedule table thead {
   background: #595778;
@@ -2207,6 +2290,7 @@ section#sponsors ul.sponsors-list.community li {
 #schedule table tbody tr.start-it .segment {
   color: #f07b48;
   font-weight: bold;
+  text-transform: capitalize;
 }
 #schedule table tbody tr.build-it {
   border-left-color: #5ed7b3;
@@ -2215,6 +2299,7 @@ section#sponsors ul.sponsors-list.community li {
 #schedule table tbody tr.build-it .segment {
   color: #5ed7b3;
   font-weight: bold;
+  text-transform: capitalize;
 }
 #schedule table tbody tr.ship-it {
   border-left-color: #f49e8a;
@@ -2223,6 +2308,7 @@ section#sponsors ul.sponsors-list.community li {
 #schedule table tbody tr.ship-it .segment {
   color: #f49e8a;
   font-weight: bold;
+  text-transform: capitalize;
 }
 #schedule table tbody tr.use-it {
   border-left-color: #f3b82a;
@@ -2231,6 +2317,7 @@ section#sponsors ul.sponsors-list.community li {
 #schedule table tbody tr.use-it .segment {
   color: #f3b82a;
   font-weight: bold;
+  text-transform: capitalize;
 }
 #schedule table tbody tr:hover {
   background-color: #ff6631;
@@ -2260,4 +2347,13 @@ section#sponsors ul.sponsors-list.community li {
     padding-left: 5px;
     padding-right: 5px;
   }
+}
+section#scholarship {
+  background: #336048;
+}
+section#scholarship img.illustration {
+  display: block;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
 }
